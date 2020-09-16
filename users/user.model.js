@@ -10,6 +10,7 @@ const schema = new Schema({
     paidBeginner: { type: Boolean, unique: false, required: false, default: false },
     paidItermediate: { type: Boolean, unique: false, required: false, default: false },
     paidAdvanced: { type: Boolean, unique: false, required: false, default: false },
+    menuItems: { type: String, unique: false, required: false},
     hash: { type: String, required: false },
     createdDate: { type: Date, default: Date.now },
 });
