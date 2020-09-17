@@ -11,7 +11,7 @@ const schema = new Schema({
     paidItermediate: { type: Boolean, unique: false, required: false, default: false },
     paidAdvanced: { type: Boolean, unique: false, required: false, default: false },
     menuItems: { type: String, unique: false, required: false},
-    balance: { type: Number, unique: false, required: false},
+    balance: { type: Number, unique: false, required: false, default: 0},
     hash: { type: String, required: false },
     createdDate: { type: Date, default: Date.now },
 });
